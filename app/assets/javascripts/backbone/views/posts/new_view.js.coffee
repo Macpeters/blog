@@ -17,7 +17,7 @@ class Blog.Views.PostsNewView extends Backbone.View
     e.stopPropagation()
     title = $('#title').val()
     content = $('#content').val()
-    model = new BackboneTest.Models.Post({title: title, content: content})
+    model = new Blog.Models.Post({title: title, content: content})
     @collection.create model,
       success: (post) =>
         @model = post
